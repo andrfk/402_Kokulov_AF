@@ -10,7 +10,6 @@ import {
     makeWord,
     hidden_word,
     canvas,
-    startGameDB
 } from './Model.js';
 
 export let userName;
@@ -25,7 +24,6 @@ export function startGame() {
 
 export function hangman(count, text){
     let ctx = canvas.getContext("2d");
-    startGameDB();
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     ctx.beginPath();
@@ -82,7 +80,6 @@ export function hangman(count, text){
      };
 
 export function informationOutput() {
-    startGameDB();
     if (field_name.value === "") {
         alert("Введите имя")
     } else {
