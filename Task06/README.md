@@ -12,7 +12,7 @@
 
 ## Инструкция по установке и запуску игры
 
-1. Перейти по ссылке : <https://alekseykudashkin.github.io/hangman-js/>
+1. Перейти по ссылке : <https://andrfk.github.io/hangmanJS/>
 2. Следовать указанием игры.
 
 * * *
