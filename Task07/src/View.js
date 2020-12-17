@@ -10,6 +10,11 @@ import {
     makeWord,
     hidden_word,
     canvas,
+    table,
+    gamelist,
+    listGamesDB,
+    replayGameDB,
+    textGameList
 } from './Model.js';
 
 export let userName;
@@ -24,6 +29,7 @@ export function startGame() {
 
 export function hangman(count, text){
     let ctx = canvas.getContext("2d");
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     ctx.beginPath();
@@ -105,8 +111,24 @@ export function showGameOutput() {
     block_message.style.display = 'none';
     block_result.style.display = 'none';
     canvas.hidden = false;
+    gamelist.hidden = false;
     makeWord();
 }
+
+
+export async function replayGame(){
+    let html = await replayGameDB();
+    table.innerHTML = html;
+    textGameList.innerHTML = "Повтор игры"
+}
+
+
+export async function showGames(){
+    let html = await listGamesDB();
+    table.innerHTML = html;
+    textGameList.innerHTML = "Список игр"
+}
+
 
 export function messageOutput(type_message) {
     if (type_message === "win") {

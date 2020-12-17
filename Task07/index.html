@@ -8,6 +8,7 @@
     <title>Виселица</title>
 </head>
 <body>
+<script src="https://unpkg.com/idb/build/iife/index-min.js"></script>
 <div class="wrapper">
     <div class="container">
         <div class="content">
@@ -42,6 +43,16 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="gamelist" id="gamelist" hidden=true>
+        <input type="button" id="replayId" value="Повтор игры">
+        <input type="button" id="listGames" value="Спиоск игр">
+         <div id="textGameList"></div>
+         <div>
+            <table border="1" id="table" align="center">
+                
+            </table>
+         </div>
     </div>
 </div>
 
