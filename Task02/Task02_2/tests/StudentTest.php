@@ -14,8 +14,8 @@ class StudentTest extends TestCase
         $s1 -> setName("Andrey") -> setLastName("Kokulov") -> setFaculty("FMiIT") -> setCourse(4) -> setGroup(402);
         $this -> assertSame(
             "Id: 1" . "\n" .
-            "Фамилия: Aryanov" . "\n" .
-            "Имя: Vladislav" . "\n" .
+            "Фамилия: Kokulov" . "\n" .
+            "Имя: Andrey" . "\n" .
             "Факультет: FMiIT" . "\n" .
             "Курс: 4" . "\n" .
             "Группа: 402",
