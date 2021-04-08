@@ -1,0 +1,22 @@
+{
+    "name": "labs/task01",
+    "type": "project",
+	"description": "task04_2",
+    "authors": [
+        {
+            "name": "Andrey Kokulov",
+            "email": "andrfk2020@yandex.ru"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/run-test"
+    ]
+}
